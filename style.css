@@ -1,0 +1,25 @@
+body {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url(img/darkblue.jpeg);
+    /* linear-gradient(rgba(164, 154, 154, 0.5), rgba(145, 137, 137, 0.5)), */
+      /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slideshow {
+    height: 40%;
+}
+
+.container {
+    text-align: center;
+}
+.title {
+    font-size: 300%;
+    font-weight: bolder;
+}
+.msbody {
+    font-weight: bold;
+}
