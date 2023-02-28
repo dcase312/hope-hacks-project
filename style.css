@@ -75,6 +75,16 @@ header hgroup > :last-child {
       grid-template-columns: auto 25%;
     }
   }
+ 
+.middle h2{
+    color: white;
+    font-weight: bold;
+}
+
+.middle p {
+    color: white;
+    font-size: larger;
+}
   
   form.grid {
     grid-row-gap: 0;
