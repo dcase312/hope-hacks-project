@@ -11,11 +11,12 @@ body{
     /* margin: 0 100px; */
     width: 80%;
     margin: 0 auto;
-    background-image: url(missionImages/chalkboard1.jpeg);
+    background-image: url(missionImages/navy-blue.jpg);
 }
 
 .outside-container{
-    background-color: white;
+    background-color: rgba(000,000,000,0.5);
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -150,7 +151,7 @@ ul{
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
-    /* margin-bottom: 60px; */
+    margin-bottom: 100px;
 }
 
 .member-card{
@@ -177,6 +178,48 @@ ul{
     text-align: center;
     margin-top: 15px;
 }
+
+.founder-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 15px; */
+    /* display: flex; */
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 2rem; 
+}
+
+/* .founder-container h3 {
+    margin-left: 2rem;  
+
+} */
+
+.founder-info{
+    /* max-width: 500px;
+    height: auto;
+    margin: 1rem; */
+    text-align: center;
+}
+
+.founder-img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+    /* position: absolute; */
+
+}
+
+.founder-quote{
+    /* grid-column: 2/4; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
