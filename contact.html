@@ -7,7 +7,7 @@
     <title>Contact Us</title>
     <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
     <link rel="canonical" href="https://picocss.com/examples/company/">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Pico.css -->
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
 
@@ -16,27 +16,29 @@
   </head>
 
   <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Tutor U Charlotte</a>
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission Statement</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="map.html">Find a Center</a>
 
-    <!-- Hero -->
-    <div class="hero" data-theme="dark">
-      <nav class="container-fluid">
-        <ul>
-          <li><h1>Queen City Tutors</h1></li>
-        </ul>
-        <ul>
-          <li>
-            <details role="list" dir="rtl">
-              <summary aria-haspopup="listbox" role="link" class="contrast">Examples</summary>
-              <ul role="listbox">
-                <li><a href="../preview/">Home</a></li>
-                <li><a href="../preview-rtl/">Mission</a></li>
-                <li><a href="../classless/">Find A Center Near You</a></li>
-                <li><a href="/ContactPage/contact.html">Contact Us</a></li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </nav>
+      </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
       <header class="container">
       
       </header>
@@ -51,7 +53,7 @@
             <h2>Fill out form below to apply</h2>
             <h3></h3>
           </hgroup>
-          <p>At (company name) we strive on providing students in the Charlotte area with all the possibilities to excel academically. We offer our services to any student altough we do have an application process as we have to be selective to whom we can offer our services. We cover transportation and tuition costs for the tutoring centers.</p>
+          <p>At Tutor U we strive on providing students in the Charlotte area with all the possibilities to excel academically. We offer our services to any student altough we do have an application process as we have to be selective to whom we can offer our services. We cover transportation and tuition costs for the tutoring centers.</p>
           <figure>
             <img src="img/qc.webp" alt="Architecture">
             
@@ -111,8 +113,18 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-    </footer>
+    <footer class="footer-bottom">
+      <ul class="socials">
+          
+        <li><a href="https://facebook.com/" aria-label="Read more about Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/" aria-label="Read more aboutTwitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://googleplus.com/" aria-label="Read more about Google Plus"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="https://youtube.com/" aria-label="Read more about Youtube"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://linkedin.com/" aria-label="Read more about Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+  </footer>
+</body>
+</html>
     <script src="/ContactPage/form.js"></script>
 
   </body>
