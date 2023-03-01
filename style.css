@@ -1,3 +1,53 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;  
+    z-index: 1; 
+    left: 0; 
+     top: 0; 
+     background-image: url(img/supplies\ \(1\).jpeg);
+     background-size: 1500px 850px;
+    /* background-color: #ffeaa7;  */
+    overflow-x: hidden; 
+    transition: 0.5s;
+
+   } 
+  
+  /*  content inside the nav */
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eeee;
+    display: block; 
+    transition: 0.3s;
+  }
+  
+  /* changes color of nav links */
+  .overlay a:hover, .overlay a:focus {
+    color: black;
+  }
+  
+  /* move the button to the up right corner */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    margin-top: 0;
+  }
+
+/* nav ends */
+
+
+
 /* Global CSS variables */
 :root {
     --spacing-company: 3rem;
@@ -75,7 +125,7 @@ header hgroup > :last-child {
   }
 
 
-
+  /* Footer */
 footer{
 
     height: 100px;
@@ -128,50 +178,3 @@ footer{
   text-decoration:none;
   color:white;
 }
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;  
-    z-index: 1; 
-    left: 0; 
-     top: 0; 
-     background-image: url(img/supplies\ \(1\).jpeg);
-     background-size: 1500px 850px;
-    /* background-color: #ffeaa7;  */
-    overflow-x: hidden; 
-    transition: 0.5s;
-
-   } 
-  
-  /*  content inside the nav */
-  .overlay-content {
-    position: relative;
-    top: 25%; 
-    width: 100%; 
-    text-align: center; 
-    margin-top: 30px; 
-  }
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #eeee;
-    display: block; 
-    transition: 0.3s;
-  }
-  
-  /* changes color of nav links */
-  .overlay a:hover, .overlay a:focus {
-    color: #black;
-  }
-  
-  /* move the button to the up right corner */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-
-/* nav ends */
