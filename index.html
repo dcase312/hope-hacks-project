@@ -13,9 +13,27 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./navbar.css">
+
   </head>
 
   <body>
+    
+<!-- Minimal theme switcher -->    
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
 <!-- Nav Bar -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -90,19 +108,7 @@
 </footer>
 
 
-<!-- Minimal theme switcher -->    
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-    
 
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
 <script src="../js/minimal-theme-switcher.js"></script>
 
   </body>
