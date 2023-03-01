@@ -1,0 +1,102 @@
+body{
+    background-color: #34495E
+    ;
+}
+footer{
+
+    height: 100px;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    margin-top: 200px;
+  
+  
+  }
+  .footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  
+  }
+  .footer_content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 10px;
+    font-size: 19px;
+  text-decoration: none;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+    margin:20px;
+  }
+  
+  .footer-bottom{
+    margin: auto;
+    padding-top: 20px;
+    background-color: #34495e;
+  
+  }
+
+  a
+{
+  text-decoration:none;
+  color:white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;  
+    z-index: 1; 
+    left: 0; 
+     top: 0; 
+     background-image: url(supplies.jpeg);
+     background-size: 1500px 850px;
+    /* background-color: #ffeaa7;  */
+    overflow-x: hidden; 
+    transition: 0.5s;
+
+   } 
+  
+  /*  content inside the nav */
+  .overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #eeee;
+    display: block; 
+    transition: 0.3s;
+  }
+  
+  /* changes color of nav links */
+  .overlay a:hover, .overlay a:focus {
+    color: black;
+  }
+  
+  /* move the button to the up right corner */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
