@@ -9,34 +9,63 @@ var mapOptions = {
 var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
 var marker1 = new google.maps.Marker({
-    position: {lat: 35.089720, lng: -80.858410},
-    map: map,
-    title: 'Huntington learning Center'
+  position: {lat: 35.089720, lng: -80.858410},
+  map: map,
+  title: 'Huntington learning Center'
+});
+
+marker1.addListener('click', function() {
+  // Reverse geocode the marker's position to an address
+  var geocoder = new google.maps.Geocoder();
+  geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+    if (status === 'OK') {
+      // Get the first result, which should be the most accurate
+      var address = results[0].formatted_address;
+      // Load the address into the destination box
+      document.getElementById('to').value = '8320 Pineville-Matthews Rd Suite 605, Charlotte, NC 28226';
+    } else {
+      console.log('Geocoder failed due to: ' + status);
+    }
   });
-  // Add a click event listener to the marker
-    marker1.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  8320 Pineville-Matthews Rd Suite 605, Charlotte, NC 28226 ');
-  });
+});
 
   var marker2 = new google.maps.Marker({
     position: {lat: 35.097120, lng: -80.780670},
     map: map,
     title: 'C2 Education of Charlotte'
   });
-    // Add a click event listener to the marker
-    marker2.addListener('click', function() {
-        // Code to execute when the marker is clicked
-        alert('Address:  8036 Providence Rd #1100, Charlotte, NC 28277 ');
-      });
+  marker2.addListener('click', function() {
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '8036 Providence Rd #1100, Charlotte, NC 28277';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
+  });
   var marker3 = new google.maps.Marker({
     position: {lat: 35.135120, lng: -80.780340},
     map: map,
     title: 'Kumon Math & Reading Center'
   });
   marker3.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  5664 International Dr Suite E, Charlotte, NC 28270 ');
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '5664 International Dr Suite E, Charlotte, NC 28270';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
   });
   var marker4 = new google.maps.Marker({
     position: {lat: 35.160550, lng: -80.850100},
@@ -44,17 +73,37 @@ var marker1 = new google.maps.Marker({
     title: 'Lazar Center Charlote'
   });
   marker4.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  5126 Park Rd #2d, Charlotte, NC 28209 ');
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '5126 Park Rd #2d, Charlotte, NC 28209';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
   });
   var marker5 = new google.maps.Marker({
-    position: {lat: 35.135120, lng: 35.173180},
+    position: {lat: 35.177524, lng: -80.801119},
     map: map,
     title: 'Swan Learning Center'
   });
   marker5.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  427 S Sharon Amity Rd, Charlotte, NC 28211 ');
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '427 S Sharon Amity Rd, Charlotte, NC 28211';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
   });
   var marker6 = new google.maps.Marker({
     position: {lat: 35.163000, lng: -80.743640},
@@ -62,8 +111,18 @@ var marker1 = new google.maps.Marker({
     title: 'Tutor Doctor Central Charlotte'
   });
   marker6.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  2180 Winthrop Chase Dr, Charlotte, NC 28212 ');
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '2180 Winthrop Chase Dr, Charlotte, NC 28212';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
   });
   var marker7 = new google.maps.Marker({
     position: {lat: 35.221437, lng: -80.723611},
@@ -71,8 +130,18 @@ var marker1 = new google.maps.Marker({
     title: 'Wiz Kidz Tutoring'
   });
   marker7.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  7209 E W.T. Harris Blvd ste j, Charlotte, NC 28227 ');
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '7209 E W.T. Harris Blvd ste j, Charlotte, NC 28227';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
   });
   var marker8 = new google.maps.Marker({
     position: {lat: 35.318728, lng: -80.775098},
@@ -80,8 +149,18 @@ var marker1 = new google.maps.Marker({
     title: 'Sylvan Learning of Charlotte-University Area'
   });
   marker8.addListener('click', function() {
-    // Code to execute when the marker is clicked
-    alert('Address:  8310 Medical Plaza Dr STE F, Charlotte, NC 28262 ');
+    // Reverse geocode the marker's position to an address
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({'location': marker1.getPosition()}, function(results, status) {
+      if (status === 'OK') {
+        // Get the first result, which should be the most accurate
+        var address = results[0].formatted_address;
+        // Load the address into the destination box
+        document.getElementById('to').value = '8310 Medical Plaza Dr STE F, Charlotte, NC 28262';
+      } else {
+        console.log('Geocoder failed due to: ' + status);
+      }
+    });
   });
 //   marker.setMap(map);
 //create a DirectionsService object to use the route method and get a result for our request
