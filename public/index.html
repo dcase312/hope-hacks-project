@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Charlotte Tutor</title>
+    <meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico">
+    <link rel="canonical" href="https://picocss.com/examples/company/">
+
+<!-- Pico.css -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./navbar.css">
+
+  </head>
+
+  <body>
+
+<!-- Minimal theme switcher -->    
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<!-- Nav Bar -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Tutor U Charlotte</a>
+          <a href="index.html">Home</a>
+          <a href="mission.html">Mission Statement</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="map.html">Find a Center</a>
+
+        </div>
+    </div>
+<!-- End Of Nav Bar-->
+      
+<!-- Hero -->
+    <div class="hero">
+      <header class="container">
+        <hgroup>
+          <h1>OUR MISSION</h1>
+          <h2>Our vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential. We will do this by providing a welcoming, happy, safe, and supportive learning environment in which everyone is equal and all achievements are celebrated. We are committed to the families we serve, providing support and encouragement. We connect Charlotte elementary schoolers with underfunded access to education with opportunities to excel in academics.</h2>
+        </hgroup>
+        <p><a href="mission.html" role="button">LEARN MORE</a></p>
+      </header>
+    </div>
+<!-- End of Hero -->
+
+
+<!-- Main -->
+    <main class="container">
+        <div class="grid">
+
+            <section class="middle">
+                <hgroup>
+                    <h2>Charlotte Tutor</h2>
+                    <h3></h3>
+                </hgroup>
+                <p>Helping Students To Achieve Their Academics Goals</p>
+                <figure>
+                    <img src="img/cool_school.jpeg" alt="Instuctor and Student">
+                </figure>
+            </section>
+
+            <aside>
+                <img src="img/charlotte.jpeg" alt="Charlotte">
+                <p>
+                    <a href="map.html">Tutor Locations</a><br>
+                    <small>Need Help Finding a Loaction? No Worries, We Got You Covered!</small>
+                </p>
+
+                <img src="img/tutor_math.jpeg" alt="Student Tutoring">
+                <p>
+                    <a href="contact.html">Contact Us</a><br>
+                    <small>Have Any Questions Or Conerns? Let Us Know.</small>
+                </p>
+            </aside>
+
+        </div>
+    </main>
+<!-- End of Main -->
+
+<!-- Footer -->
+<footer class="footer-bottom">
+
+    <ul class="socials">
+        
+      <li><a href="https://facebook.com/" aria-label="Read more about Facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://twitter.com/" aria-label="Read more aboutTwitter"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://googleplus.com/" aria-label="Read more about Google Plus"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="https://youtube.com/" aria-label="Read more about Youtube"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="https://linkedin.com/" aria-label="Read more about Linkedin"><i class="fa fa-linkedin-square"></i></a></li>
+    </ul>
+
+</footer>
+<!-- End of Footer -->
+
+
+<script src="../js/minimal-theme-switcher.js"></script>
+
+  </body>
+
+</html>
