@@ -100,3 +100,23 @@ footer{
     right: 45px;
     font-size: 60px;
   }
+  h1 {
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-style: italic;
+ font-size: xx-large;
+ border-radius: 30px;
+    display: inline-block;
+    border: 5px solid #34495E;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .box {
+    margin:auto;
+    position:relative;
+    width: 270px;
+    justify-content: center;
+  }
+  
+  
