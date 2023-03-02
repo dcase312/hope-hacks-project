@@ -1,35 +1,46 @@
-body { 
-    background-color:lightcoral;
-    background-image: url("/img/apla.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-    background-color:#34495E;
-} 
+/*styling.css*/
+/*add font family, background image*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+      background-image: url(img/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+      color: rgb(239, 246, 249);
+      font-family: "Poppins", sans-serif;
+    }
+    .fa-map-marker-alt,
+    .fa-dot-circle {
+      color: #DADE5B;
+    }
+    /*Jumbotron*/
+    .jumbotron h2 {
+      letter-spacing: 2.5px;
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    /*map*/
+    #googleMap {
+      float:left;
+      width: 50%;
+      height: 400px;
+      margin: 10px auto;
+      margin-left: 500px;
+    
+    }
+    /*output box*/
+    #output {
+      text-align: left;
+      font-size: 19px;
+      font-weight: bold;
+      margin: 20px auto;
+      margin-top: 5px;
+      position:fixed;
 
-
-.para {
-    margin-left: 450px;
-    padding-bottom: 50px;
-} 
-
-
-.container {
-    padding-top: 100px;
-    margin-left: 375px;
-} 
-
-h1 {
-    color:black;
-    font-family: fantasy;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 50px;
-} 
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    margin-right: 450px;
-
-}
-
+    }
+    #mode {
+      color: black;
+    }
+  
