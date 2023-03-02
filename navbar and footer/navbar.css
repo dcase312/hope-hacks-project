@@ -1,5 +1,6 @@
 footer{
-
+    display: flex;
+    justify-content: center;
     height: 100px;
     width: 100%;
     font-family: "Open Sans";
@@ -43,6 +44,9 @@ footer{
     margin: auto;
     padding-top: 20px;
     background-color: #34495e;
+    bottom: 0;
+    position: fixed;
+    height: auto;
   
   }
 
@@ -86,7 +90,7 @@ footer{
   
   /* changes color of nav links */
   .overlay a:hover, .overlay a:focus {
-    color: #black;
+    color: black;
   }
   
   /* move the button to the up right corner */
