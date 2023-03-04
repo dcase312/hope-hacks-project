@@ -27,7 +27,7 @@
       width: 50%;
       height: 400px;
       margin: 10px auto;
-      margin-left: 500px;
+      margin-left: 550px;
     
     }
     /*output box*/
@@ -43,4 +43,72 @@
     #mode {
       color: black;
     }
+
+    /* desired height and font size values for the Starting Location and Destination  */
+    #from, #to {
+      height: 25px; 
+      font-size: 18px; 
+    }
   
+
+    .btn-info {
+      color: #fff;
+      background-color: #34495e;
+      border-color: #34495e;
+      padding: 5px 20px;
+      font-size: 10px;
+      line-height: 1.5;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+
+/* Responsiveness for Small Mobile Phones up to screen size 480 */
+@media screen and (max-width: 480px) {
+  #output {
+    position: absolute;
+    font-size: x-large;
+
+  }
+
+  #googleMap {
+    margin-top: -50px;
+    margin-left: 40%;
+    /* width: 90%; */
+  }
+}
+
+/* Responsiveness for Large mobile phones to Laptops */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #output {
+    position: absolute;
+    font-size: medium;
+  }
+
+  #googleMap {
+    margin-top: -100px;
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+/* Responsiveness for Laptops to Desktops */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #output {
+    position: absolute;
+    font-size: large;
+  }
+
+  #googleMap {
+    margin-top: 70px;
+    margin-left: 38%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  #googleMap {
+   margin-top: -100px;
+   margin-left: 40%;
+  }
+
+}
