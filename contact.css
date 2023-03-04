@@ -112,7 +112,38 @@ footer{
     padding: 10px;
   }
 
+  h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size: xx-large;
+    border-radius: 30px;
+       display: inline-block;
+       border: 5px solid #34495E;
+       text-align: center;
+       justify-content: center;
+       padding: 10px;
+     }
+   
+     h3 {
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-style: italic;
+      font-size: xx-large;
+      border-radius: 30px;
+         display: inline-block;
+         border: 1px solid #34495E;
+         text-align: center;
+         justify-content: center;
+         padding: 1px;
+       }
+     
   .box {
+    margin:auto;
+    position:relative;
+    width: 270px;
+    justify-content: center;
+  }
+  
+  .box1 {
     margin:auto;
     position:relative;
     width: 270px;
