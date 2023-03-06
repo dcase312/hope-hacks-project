@@ -36,7 +36,8 @@
           }
           </script>
     </header>
-    <div class="jumbotron">
+    <section class="jumbo">
+      <div class="jumbotron">
         <div class="container-fluid">
             <h2>Tutor U Charlotte</h2>
             <form class="form-horizontal">
@@ -57,19 +58,22 @@
                  </div>
             </form>
         </div>
-    </div>
-
-<!-- setting up a button with an onclick event and it will run the calcRoute function in our JS file --> 
-     <div class="col-xs-offset-2 col-xs-10">
-        <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
-     </div>
-        <!-- </div> -->
-        <div class="container-fluid">
-            <!-- div specifying the map using an ID -->
-        <div id="googleMap"></div>
-        <div id="output"></div>
       </div>
-  </div>
+    </section>
+
+    <section class="col">
+<!-- setting up a button with an onclick event and it will run the calcRoute function in our JS file --> 
+        <div class="col-xs-offset-2 col-xs-10">
+          <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+         </div>
+        <!-- </div> -->
+          <div class="container-fluid">
+            <!-- div specifying the map using an ID -->
+          <div id="googleMap"></div>
+          <div id="output"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy2H50KvYUfK3QBE6GhC6lwo03MlSU4kM&libraries=places"></script>

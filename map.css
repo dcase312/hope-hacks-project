@@ -73,7 +73,6 @@
   #googleMap {
     margin-top: -50px;
     margin-left: 40%;
-    /* width: 90%; */
   }
 }
 
@@ -81,7 +80,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   #output {
     position: absolute;
-    font-size: medium;
+    font-size: large;
   }
 
   #googleMap {
@@ -95,7 +94,7 @@
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   #output {
     position: absolute;
-    font-size: large;
+    font-size: small;
   }
 
   #googleMap {
@@ -106,9 +105,14 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1500px) {
+  #output {
+    position: absolute;
+    font-size: small;
+  }
   #googleMap {
    margin-top: -100px;
    margin-left: 40%;
   }
+
 
 }
