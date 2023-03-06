@@ -66,10 +66,7 @@ app.post('/contact', async (req,res) => {
         );
         console.log(`Inserted ${rows.affectedRows} rows(s)`)
         conn.release();
-        // res.send(`Thanks for contacting us! Click here to go back: ${<a href="../">Home Page</a>}`);
-        res.writeHead(302, {
-            'Location': '/index.html'
-          });
+        res.send('Form Submitted');
     } catch (err) {
         console.error(err);
         res.status(500).send('Internal Server Error');
