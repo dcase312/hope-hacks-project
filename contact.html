@@ -83,31 +83,33 @@
         <article>
             <h4>Fill Out Form Below</h4>
           
-          <form>
-
+          <form method="POST" action="/contact">
+            
             <!-- Grid -->
             <div class="grid">
-              <label for="firstname">
+              <label for="first_name">
                 First name
-                <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+                <input type="text" id="firstname" name="first_name" placeholder="first name" required>
               </label>
           
-              <label for="lastname">
+              <label for="last_name">
                 Last name
-                <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+                <input type="text" id="lastname" name="last_name" placeholder="last name" required>
               </label>
           
             </div>
-            <label>Current school</label>
-            <input type="school" id="school" name="school" placeholder="Current school" required>
-            <label>Annual income</label>
-            <input type="income" id="income" name="income" placeholder="Annual income" required>
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="Email address" required>
+            <label for="current_school">Current school</label>
+            <input type="school" id="school" name="current_school" placeholder="current school" required>
+            <label for="annual_income">Annual income</label>
+            <input type="income" id="income" name="annual_income" placeholder="annual income" required>
+            <label for="email_address">Email address</label>
+            <input type="email" id="email" name="email_address" placeholder="email address" required>
+
             <small>We'll never share your email with anyone else.</small>
           
     
             <button type="submit">Submit</button>
+            <!-- <a href="/sample_data/add" class="btn btn-success btn-sm float-end">Submit</a> -->
           
           </form>
         </article>
@@ -128,6 +130,7 @@
 </body>
 </html>
     <script src="/ContactPage/form.js"></script>
+    <script src="/server/app.js"></script>
 
   </body>
 
