@@ -26,11 +26,11 @@ app.get('./mission', (req, res) => {
 })
 
 // Contact Page
-app.get('/contact', (req, res) => {
-    res.render('help', {
+// app.get('/contact', (req, res) => {
+//     res.render('help', {
       
-    })
-})
+//     })
+// })
 
 // Map Page
 app.get('/map', (req, res) => {
